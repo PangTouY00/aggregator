@@ -5,411 +5,231 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国-纽约-HY-001-1H, server: 45.135.135.229, port: 31008, type: hysteria2, password: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, auth: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1A, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: b36b5a53-b055-4a71-bb5e-2786f51e195e, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1C, server: 45.135.135.229, port: 80, type: hysteria2, password: e166e0bb-de19-4f23-a807-e49e25612f53, auth: e166e0bb-de19-4f23-a807-e49e25612f53, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D, udp: true}
-  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1F, server: 45.135.135.229, port: 33079, type: hysteria2, password: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, auth: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1A, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 92fd2671-787e-4b19-ab15-86e64c16305c, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
-  - {name: 🇹🇭 泰国NO1, server: haa.dashuai.cyou, port: 45060, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1G, server: 45.135.135.229, port: 25007, type: vmess, uuid: 5f293653-f072-4e17-99e7-d70b6f2615a3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1F, server: 45.135.135.229, port: 22075, type: vmess, uuid: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1B, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: f18fc386-f5f2-4159-8c9f-e9c789ab488e, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1N, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: c2aa9eb3-6a0e-4d93-88ad-559904bd7d5d, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1E, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 258a3622-c604-4123-80de-12d1cebcece2, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-002-1A, server: 45.135.135.229, port: 23123, type: vmess, uuid: 44610f44-21f7-43d2-b156-94ae74feb696, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1I, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: f2b916d5-9901-41ca-ad37-02c4c21c1012, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1D, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: a0b1353c-29e3-48ea-a210-fbac75b3a8f8, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1D, server: 45.135.135.229, port: 25007, type: vmess, uuid: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1F, server: 45.135.135.229, port: 25007, type: vmess, uuid: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1B, server: 45.135.135.229, port: 33079, type: hysteria2, password: c0f8e282-b0ae-452c-9472-1963de0efe1b, auth: c0f8e282-b0ae-452c-9472-1963de0efe1b, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1E, server: 45.135.135.229, port: 80, type: hysteria2, password: 88005382-fd17-4895-8947-c73cdbc1358a, auth: 88005382-fd17-4895-8947-c73cdbc1358a, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1H, server: 45.135.135.229, port: 80, type: hysteria2, password: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, auth: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D, udp: true}
-  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1E, server: 45.135.135.229, port: 33079, type: hysteria2, password: 88005382-fd17-4895-8947-c73cdbc1358a, auth: 88005382-fd17-4895-8947-c73cdbc1358a, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-002-1H, server: 45.135.135.229, port: 23123, type: vmess, uuid: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 香港NO.1, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1B, server: 45.135.135.229, port: 22075, type: vmess, uuid: c0f8e282-b0ae-452c-9472-1963de0efe1b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1B, server: 45.135.135.229, port: 31008, type: hysteria2, password: c0f8e282-b0ae-452c-9472-1963de0efe1b, auth: c0f8e282-b0ae-452c-9472-1963de0efe1b, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1F, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 32567777-0e60-499c-a4fd-6921cb539d49, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1D, server: 45.135.135.229, port: 33079, type: hysteria2, password: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, auth: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1G, server: 45.135.135.229, port: 31008, type: hysteria2, password: 5f293653-f072-4e17-99e7-d70b6f2615a3, auth: 5f293653-f072-4e17-99e7-d70b6f2615a3, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-002-1E, server: 45.135.135.229, port: 23123, type: vmess, uuid: 88005382-fd17-4895-8947-c73cdbc1358a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1C, server: 45.135.135.229, port: 22075, type: vmess, uuid: e166e0bb-de19-4f23-a807-e49e25612f53, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1H, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: dd76e3d4-ff4a-419e-9189-4c727ab7fde3, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1H, server: 45.135.135.229, port: 22075, type: vmess, uuid: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1D, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 9212e47b-6ca3-4250-a588-a9320b4c1b87, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1G, server: 45.135.135.229, port: 22075, type: vmess, uuid: 5f293653-f072-4e17-99e7-d70b6f2615a3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1G, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 1f1e3710-0940-424e-95c6-75feab04f82a, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1A, server: 45.135.135.229, port: 25007, type: vmess, uuid: 44610f44-21f7-43d2-b156-94ae74feb696, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1G, server: 45.135.135.229, port: 33079, type: hysteria2, password: 5f293653-f072-4e17-99e7-d70b6f2615a3, auth: 5f293653-f072-4e17-99e7-d70b6f2615a3, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇲🇾 马来西亚专线NO1, server: haa.dashuai.cyou, port: 45058, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1H, server: 45.135.135.229, port: 33079, type: hysteria2, password: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, auth: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1O, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 56b43551-89bc-4a49-9b04-c78ebbe15cd6, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇲🇾 马来西亚专线NO2, server: xdd.dashuai.cyou, port: 45059, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1E, server: 45.135.135.229, port: 31008, type: hysteria2, password: 88005382-fd17-4895-8947-c73cdbc1358a, auth: 88005382-fd17-4895-8947-c73cdbc1358a, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1L, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 066bd79f-434b-40b9-a955-9a5abf27ea4f, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1J, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 4732248a-b3e3-4b83-8009-a42169884182, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1M, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 8f2bbff6-9464-48ec-9f1f-7aa6b64871aa, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1C, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 56ee6804-bb80-4268-83e6-fc517e008186, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1A, server: 45.135.135.229, port: 33079, type: hysteria2, password: 44610f44-21f7-43d2-b156-94ae74feb696, auth: 44610f44-21f7-43d2-b156-94ae74feb696, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1C, server: 45.135.135.229, port: 33079, type: hysteria2, password: e166e0bb-de19-4f23-a807-e49e25612f53, auth: e166e0bb-de19-4f23-a807-e49e25612f53, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1A, server: 45.135.135.229, port: 80, type: hysteria2, password: 44610f44-21f7-43d2-b156-94ae74feb696, auth: 44610f44-21f7-43d2-b156-94ae74feb696, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1A, server: 45.135.135.229, port: 22075, type: vmess, uuid: 44610f44-21f7-43d2-b156-94ae74feb696, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1P, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: b6777bf9-c6ab-4fc3-845b-95949b110a5f, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1H, server: 45.135.135.229, port: 25007, type: vmess, uuid: 5fa397d4-00d1-42e3-963b-c09cfe9467ed, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1E, server: 45.135.135.229, port: 25007, type: vmess, uuid: 88005382-fd17-4895-8947-c73cdbc1358a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1D, server: 45.135.135.229, port: 80, type: hysteria2, password: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, auth: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1A, server: 45.135.135.229, port: 31008, type: hysteria2, password: 44610f44-21f7-43d2-b156-94ae74feb696, auth: 44610f44-21f7-43d2-b156-94ae74feb696, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-002-1F, server: 45.135.135.229, port: 23123, type: vmess, uuid: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-002-1D, server: 45.135.135.229, port: 23123, type: vmess, uuid: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 香港, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1F, server: 45.135.135.229, port: 80, type: hysteria2, password: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, auth: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D, udp: true}
-  - {name: 🇹🇭 泰国NO2, server: xdd.dashuai.cyou, port: 45061, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1C, server: 45.135.135.229, port: 25007, type: vmess, uuid: e166e0bb-de19-4f23-a807-e49e25612f53, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1D, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: c25af475-d19a-4c20-afa5-53ac3c20b0cb, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
+  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1E, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 92fd2671-787e-4b19-ab15-86e64c16305c, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
+  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1K, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 4732248a-b3e3-4b83-8009-a42169884182, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1D, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: c2aa9eb3-6a0e-4d93-88ad-559904bd7d5d, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇭 泰国NO2, server: xdd.dashuai.cyou, port: 45061, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1P, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: f18fc386-f5f2-4159-8c9f-e9c789ab488e, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1H, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 83351242-7271-48af-bd9e-67e02cac61fd, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
+  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港NO.1, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1A, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 56b43551-89bc-4a49-9b04-c78ebbe15cd6, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1C, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: d6b93432-e8d8-4517-a061-41363f2b22cc, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇲🇾 马来西亚专线NO1, server: haa.dashuai.cyou, port: 45058, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇲🇾 马来西亚专线NO2, server: xdd.dashuai.cyou, port: 45059, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1J, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 066bd79f-434b-40b9-a955-9a5abf27ea4f, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1G, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: dd76e3d4-ff4a-419e-9189-4c727ab7fde3, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1G, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: ea53e81d-c585-4bc2-9838-70347c016c40, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
+  - {name: 🇹🇭 泰国NO1, server: haa.dashuai.cyou, port: 45060, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1L, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 1f1e3710-0940-424e-95c6-75feab04f82a, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1N, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 56ee6804-bb80-4268-83e6-fc517e008186, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1F, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: a0b1353c-29e3-48ea-a210-fbac75b3a8f8, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1H, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 8f2bbff6-9464-48ec-9f1f-7aa6b64871aa, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1O, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: e6024ee6-f7e2-4438-ae53-5d0e2436d309, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1M, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 334194bf-6444-48be-91ff-2eff99455ed8, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1A, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 32567777-0e60-499c-a4fd-6921cb539d49, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1I, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: b36b5a53-b055-4a71-bb5e-2786f51e195e, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1B, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 258a3622-c604-4123-80de-12d1cebcece2, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1B, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: b6777bf9-c6ab-4fc3-845b-95949b110a5f, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1Q, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 96832cbf-4e55-4053-bfee-472822e328fd, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-三网优化2-1E, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: f2b916d5-9901-41ca-ad37-02c4c21c1012, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 87247e4c-0ded-4b3a-b6e2-49686b85240a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1F, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: 9212e47b-6ca3-4250-a588-a9320b4c1b87, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
   - {name: 🇺🇸 美国-布法罗-CDN | 1x-1C, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: d6e892a9-943c-4945-802c-d931fbb4ec09, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
-  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-002-1G, server: 45.135.135.229, port: 23123, type: vmess, uuid: 5f293653-f072-4e17-99e7-d70b6f2615a3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1G, server: 45.135.135.229, port: 80, type: hysteria2, password: 5f293653-f072-4e17-99e7-d70b6f2615a3, auth: 5f293653-f072-4e17-99e7-d70b6f2615a3, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-002-1C, server: 45.135.135.229, port: 23123, type: vmess, uuid: e166e0bb-de19-4f23-a807-e49e25612f53, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1E, server: 45.135.135.229, port: 22075, type: vmess, uuid: 88005382-fd17-4895-8947-c73cdbc1358a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1D, server: 45.135.135.229, port: 31008, type: hysteria2, password: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, auth: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1B, server: 45.135.135.229, port: 80, type: hysteria2, password: c0f8e282-b0ae-452c-9472-1963de0efe1b, auth: c0f8e282-b0ae-452c-9472-1963de0efe1b, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1C, server: 45.135.135.229, port: 31008, type: hysteria2, password: e166e0bb-de19-4f23-a807-e49e25612f53, auth: e166e0bb-de19-4f23-a807-e49e25612f53, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1B, server: 45.135.135.229, port: 25007, type: vmess, uuid: c0f8e282-b0ae-452c-9472-1963de0efe1b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1D, server: 45.135.135.229, port: 22075, type: vmess, uuid: da2e1af8-ad42-4cd4-a9d3-9aa8002830c7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1E, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: e6024ee6-f7e2-4438-ae53-5d0e2436d309, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国-布法罗-CDN | 1x-1B, server: 1750158741.tencentapp.cn, port: 443, type: vmess, uuid: c25af475-d19a-4c20-afa5-53ac3c20b0cb, alterId: 0, cipher: auto, tls: true, servername: free1.loopycloudcfjiasucdn.us.kg, network: ws, ws-opts: {path: /, headers: {Host: free1.loopycloudcfjiasucdn.us.kg}}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-002-1B, server: 45.135.135.229, port: 23123, type: vmess, uuid: c0f8e282-b0ae-452c-9472-1963de0efe1b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1F, server: 45.135.135.229, port: 31008, type: hysteria2, password: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, auth: 92a2b658-18e6-49c1-99e9-4fd60e63ac10, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1F, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 334194bf-6444-48be-91ff-2eff99455ed8, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国-三网优化2-1K, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: d6b93432-e8d8-4517-a061-41363f2b22cc, sni: kr-qingyun.dwyun.me, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: b97ce295-8240-443e-927a-592338f27938, alterId: 0, cipher: auto, tls: false, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国-纽约-HY-001-1H
-      - 🇰🇷 韩国-三网优化2-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1C
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
-      - 🇺🇸 美国-布法罗-CDN | 1x-1A
-      - 🇹🇭 泰国NO1
-      - 🇨🇦 加拿大2
-      - 🇺🇸 美国-拉斯维加斯-003-1G
-      - 🇺🇸 美国-纽约-001-1F
-      - 🇸🇬 新加坡NO.2
-      - 🇰🇷 韩国-三网优化2-1B
-      - 🇰🇷 韩国-三网优化2-1N
-      - 🇺🇸 美国-布法罗-CDN | 1x-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1A
-      - 🇰🇷 韩国-三网优化2-1I
-      - 🇫🇷 法国2
-      - 🇰🇷 韩国-三网优化2-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-拉斯维加斯-003-1F
-      - 🇨🇦 加拿大1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国NO.1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
-      - 🇹🇼 台湾1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1H
-      - 🇭🇰 香港NO.1
-      - 🇰🇷 韩国 专线NO1
-      - 🇮🇳 印度1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇺🇸 美国-布法罗-CDN | 1x-1F
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇺🇸 美国-纽约-HY-001-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1E
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇰🇷 韩国-三网优化2-1H
-      - 🇺🇸 美国-纽约-001-1H
       - 🇺🇸 美国-布法罗-CDN | 1x-1D
-      - 🇺🇸 美国-纽约-001-1G
-      - 🇰🇷 韩国-三网优化2-1G
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
-      - 🇦🇺 澳大利亚原生2
-      - 🇬🇧 英国1
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
-      - 🇰🇷 韩国-三网优化2-1O
-      - 🇲🇾 马来西亚专线NO2
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇰🇷 韩国-三网优化2-1L
-      - 🇰🇷 韩国-三网优化2-1J
-      - 🇰🇷 韩国-三网优化2-1M
-      - 🇰🇷 韩国-三网优化2-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇰🇷 韩国-三网优化2-1P
-      - 🇺🇸 美国-拉斯维加斯-003-1H
-      - 🇬🇧 英国2
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-纽约-HY-001-1A
-      - 🇺🇸 美国-拉斯维加斯-002-1F
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-002-1D
-      - 🇭🇰 香港
-      - 🇺🇸 美国NO.2
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
-      - 🇹🇭 泰国NO2
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-布法罗-CDN | 1x-1C
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-拉斯维加斯-002-1G
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1C
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇰🇷 韩国-三网优化2-1E
-      - 🇺🇸 美国-布法罗-CDN | 1x-1B
-      - 🇺🇸 美国-拉斯维加斯-002-1B
-      - 🇺🇸 美国-纽约-HY-001-1F
-      - 🇰🇷 韩国-三网优化2-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1E
+      - 🇦🇺 澳大利亚原生1
+      - 🇹🇼 台湾1
       - 🇰🇷 韩国-三网优化2-1K
+      - 🇺🇸 美国NO.1
+      - 🇸🇬 新加坡NO.1
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇰🇷 韩国 专线NO1
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇭🇰 香港
+      - 🇺🇸 美国-布法罗-CDN | 1x-1H
+      - 🇺🇸 美国NO.2
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇲🇾 马来西亚专线NO1
+      - 🇲🇾 马来西亚专线NO2
       - 🇯🇵 日本NO.2
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1G
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇮🇳 印度1
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇹🇼 台湾2
+      - 🇮🇳 印度2
+      - 🇭🇰 香港NO.2
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇫🇷 法国1
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇺🇸 美国-布法罗-CDN | 1x-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇺🇸 美国-布法罗-CDN | 1x-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇬🇧 英国2
+      - 🇰🇷 韩国 专线NO2
+      - 🇨🇦 加拿大1
+      - 🇬🇧 英国1
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇫🇷 法国2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1C
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国-纽约-HY-001-1H
-      - 🇰🇷 韩国-三网优化2-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1C
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
-      - 🇺🇸 美国-布法罗-CDN | 1x-1A
-      - 🇹🇭 泰国NO1
-      - 🇨🇦 加拿大2
-      - 🇺🇸 美国-拉斯维加斯-003-1G
-      - 🇺🇸 美国-纽约-001-1F
-      - 🇸🇬 新加坡NO.2
-      - 🇰🇷 韩国-三网优化2-1B
-      - 🇰🇷 韩国-三网优化2-1N
-      - 🇺🇸 美国-布法罗-CDN | 1x-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1A
-      - 🇰🇷 韩国-三网优化2-1I
-      - 🇫🇷 法国2
-      - 🇰🇷 韩国-三网优化2-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-拉斯维加斯-003-1F
-      - 🇨🇦 加拿大1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国NO.1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
-      - 🇹🇼 台湾1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1H
-      - 🇭🇰 香港NO.1
-      - 🇰🇷 韩国 专线NO1
-      - 🇮🇳 印度1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇺🇸 美国-布法罗-CDN | 1x-1F
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇺🇸 美国-纽约-HY-001-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1E
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇰🇷 韩国-三网优化2-1H
-      - 🇺🇸 美国-纽约-001-1H
       - 🇺🇸 美国-布法罗-CDN | 1x-1D
-      - 🇺🇸 美国-纽约-001-1G
-      - 🇰🇷 韩国-三网优化2-1G
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
-      - 🇦🇺 澳大利亚原生2
-      - 🇬🇧 英国1
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
-      - 🇰🇷 韩国-三网优化2-1O
-      - 🇲🇾 马来西亚专线NO2
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇰🇷 韩国-三网优化2-1L
-      - 🇰🇷 韩国-三网优化2-1J
-      - 🇰🇷 韩国-三网优化2-1M
-      - 🇰🇷 韩国-三网优化2-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇰🇷 韩国-三网优化2-1P
-      - 🇺🇸 美国-拉斯维加斯-003-1H
-      - 🇬🇧 英国2
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-纽约-HY-001-1A
-      - 🇺🇸 美国-拉斯维加斯-002-1F
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-002-1D
-      - 🇭🇰 香港
-      - 🇺🇸 美国NO.2
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
-      - 🇹🇭 泰国NO2
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-布法罗-CDN | 1x-1C
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-拉斯维加斯-002-1G
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1C
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇰🇷 韩国-三网优化2-1E
-      - 🇺🇸 美国-布法罗-CDN | 1x-1B
-      - 🇺🇸 美国-拉斯维加斯-002-1B
-      - 🇺🇸 美国-纽约-HY-001-1F
-      - 🇰🇷 韩国-三网优化2-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1E
+      - 🇦🇺 澳大利亚原生1
+      - 🇹🇼 台湾1
       - 🇰🇷 韩国-三网优化2-1K
+      - 🇺🇸 美国NO.1
+      - 🇸🇬 新加坡NO.1
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇰🇷 韩国 专线NO1
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇭🇰 香港
+      - 🇺🇸 美国-布法罗-CDN | 1x-1H
+      - 🇺🇸 美国NO.2
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇲🇾 马来西亚专线NO1
+      - 🇲🇾 马来西亚专线NO2
       - 🇯🇵 日本NO.2
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1G
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇮🇳 印度1
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇹🇼 台湾2
+      - 🇮🇳 印度2
+      - 🇭🇰 香港NO.2
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇫🇷 法国1
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇺🇸 美国-布法罗-CDN | 1x-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇺🇸 美国-布法罗-CDN | 1x-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇬🇧 英国2
+      - 🇰🇷 韩国 专线NO2
+      - 🇨🇦 加拿大1
+      - 🇬🇧 英国1
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇫🇷 法国2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1C
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国-纽约-HY-001-1H
-      - 🇰🇷 韩国-三网优化2-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1C
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
-      - 🇺🇸 美国-布法罗-CDN | 1x-1A
-      - 🇹🇭 泰国NO1
-      - 🇨🇦 加拿大2
-      - 🇺🇸 美国-拉斯维加斯-003-1G
-      - 🇺🇸 美国-纽约-001-1F
-      - 🇸🇬 新加坡NO.2
-      - 🇰🇷 韩国-三网优化2-1B
-      - 🇰🇷 韩国-三网优化2-1N
-      - 🇺🇸 美国-布法罗-CDN | 1x-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1A
-      - 🇰🇷 韩国-三网优化2-1I
-      - 🇫🇷 法国2
-      - 🇰🇷 韩国-三网优化2-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-拉斯维加斯-003-1F
-      - 🇨🇦 加拿大1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国NO.1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
-      - 🇹🇼 台湾1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1H
-      - 🇭🇰 香港NO.1
-      - 🇰🇷 韩国 专线NO1
-      - 🇮🇳 印度1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇺🇸 美国-布法罗-CDN | 1x-1F
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇺🇸 美国-纽约-HY-001-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1E
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇰🇷 韩国-三网优化2-1H
-      - 🇺🇸 美国-纽约-001-1H
       - 🇺🇸 美国-布法罗-CDN | 1x-1D
-      - 🇺🇸 美国-纽约-001-1G
-      - 🇰🇷 韩国-三网优化2-1G
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
-      - 🇦🇺 澳大利亚原生2
-      - 🇬🇧 英国1
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
-      - 🇰🇷 韩国-三网优化2-1O
-      - 🇲🇾 马来西亚专线NO2
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇰🇷 韩国-三网优化2-1L
-      - 🇰🇷 韩国-三网优化2-1J
-      - 🇰🇷 韩国-三网优化2-1M
-      - 🇰🇷 韩国-三网优化2-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇰🇷 韩国-三网优化2-1P
-      - 🇺🇸 美国-拉斯维加斯-003-1H
-      - 🇬🇧 英国2
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-纽约-HY-001-1A
-      - 🇺🇸 美国-拉斯维加斯-002-1F
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-002-1D
-      - 🇭🇰 香港
-      - 🇺🇸 美国NO.2
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
-      - 🇹🇭 泰国NO2
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-布法罗-CDN | 1x-1C
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-拉斯维加斯-002-1G
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1C
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇰🇷 韩国-三网优化2-1E
-      - 🇺🇸 美国-布法罗-CDN | 1x-1B
-      - 🇺🇸 美国-拉斯维加斯-002-1B
-      - 🇺🇸 美国-纽约-HY-001-1F
-      - 🇰🇷 韩国-三网优化2-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1E
+      - 🇦🇺 澳大利亚原生1
+      - 🇹🇼 台湾1
       - 🇰🇷 韩国-三网优化2-1K
+      - 🇺🇸 美国NO.1
+      - 🇸🇬 新加坡NO.1
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇰🇷 韩国 专线NO1
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇭🇰 香港
+      - 🇺🇸 美国-布法罗-CDN | 1x-1H
+      - 🇺🇸 美国NO.2
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇲🇾 马来西亚专线NO1
+      - 🇲🇾 马来西亚专线NO2
       - 🇯🇵 日本NO.2
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1G
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇮🇳 印度1
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇹🇼 台湾2
+      - 🇮🇳 印度2
+      - 🇭🇰 香港NO.2
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇫🇷 法国1
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇺🇸 美国-布法罗-CDN | 1x-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇺🇸 美国-布法罗-CDN | 1x-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇬🇧 英国2
+      - 🇰🇷 韩国 专线NO2
+      - 🇨🇦 加拿大1
+      - 🇬🇧 英国1
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇫🇷 法国2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1C
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -428,420 +248,240 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国-纽约-HY-001-1H
-      - 🇰🇷 韩国-三网优化2-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1C
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
-      - 🇺🇸 美国-布法罗-CDN | 1x-1A
-      - 🇹🇭 泰国NO1
-      - 🇨🇦 加拿大2
-      - 🇺🇸 美国-拉斯维加斯-003-1G
-      - 🇺🇸 美国-纽约-001-1F
-      - 🇸🇬 新加坡NO.2
-      - 🇰🇷 韩国-三网优化2-1B
-      - 🇰🇷 韩国-三网优化2-1N
-      - 🇺🇸 美国-布法罗-CDN | 1x-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1A
-      - 🇰🇷 韩国-三网优化2-1I
-      - 🇫🇷 法国2
-      - 🇰🇷 韩国-三网优化2-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-拉斯维加斯-003-1F
-      - 🇨🇦 加拿大1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国NO.1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
-      - 🇹🇼 台湾1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1H
-      - 🇭🇰 香港NO.1
-      - 🇰🇷 韩国 专线NO1
-      - 🇮🇳 印度1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇺🇸 美国-布法罗-CDN | 1x-1F
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇺🇸 美国-纽约-HY-001-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1E
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇰🇷 韩国-三网优化2-1H
-      - 🇺🇸 美国-纽约-001-1H
       - 🇺🇸 美国-布法罗-CDN | 1x-1D
-      - 🇺🇸 美国-纽约-001-1G
-      - 🇰🇷 韩国-三网优化2-1G
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
-      - 🇦🇺 澳大利亚原生2
-      - 🇬🇧 英国1
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
-      - 🇰🇷 韩国-三网优化2-1O
-      - 🇲🇾 马来西亚专线NO2
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇰🇷 韩国-三网优化2-1L
-      - 🇰🇷 韩国-三网优化2-1J
-      - 🇰🇷 韩国-三网优化2-1M
-      - 🇰🇷 韩国-三网优化2-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇰🇷 韩国-三网优化2-1P
-      - 🇺🇸 美国-拉斯维加斯-003-1H
-      - 🇬🇧 英国2
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-纽约-HY-001-1A
-      - 🇺🇸 美国-拉斯维加斯-002-1F
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-002-1D
-      - 🇭🇰 香港
-      - 🇺🇸 美国NO.2
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
-      - 🇹🇭 泰国NO2
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-布法罗-CDN | 1x-1C
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-拉斯维加斯-002-1G
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1C
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇰🇷 韩国-三网优化2-1E
-      - 🇺🇸 美国-布法罗-CDN | 1x-1B
-      - 🇺🇸 美国-拉斯维加斯-002-1B
-      - 🇺🇸 美国-纽约-HY-001-1F
-      - 🇰🇷 韩国-三网优化2-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1E
+      - 🇦🇺 澳大利亚原生1
+      - 🇹🇼 台湾1
       - 🇰🇷 韩国-三网优化2-1K
+      - 🇺🇸 美国NO.1
+      - 🇸🇬 新加坡NO.1
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇰🇷 韩国 专线NO1
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇭🇰 香港
+      - 🇺🇸 美国-布法罗-CDN | 1x-1H
+      - 🇺🇸 美国NO.2
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇲🇾 马来西亚专线NO1
+      - 🇲🇾 马来西亚专线NO2
       - 🇯🇵 日本NO.2
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1G
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇮🇳 印度1
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇹🇼 台湾2
+      - 🇮🇳 印度2
+      - 🇭🇰 香港NO.2
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇫🇷 法国1
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇺🇸 美国-布法罗-CDN | 1x-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇺🇸 美国-布法罗-CDN | 1x-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇬🇧 英国2
+      - 🇰🇷 韩国 专线NO2
+      - 🇨🇦 加拿大1
+      - 🇬🇧 英国1
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇫🇷 法国2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1C
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🇹🇼 台湾1
+      - 🇭🇰 香港
       - 🇭🇰 香港NO.1
       - 🇹🇼 台湾2
       - 🇭🇰 香港NO.2
-      - 🇭🇰 香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国-纽约-HY-001-1H
-      - 🇰🇷 韩国-三网优化2-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1C
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
-      - 🇺🇸 美国-布法罗-CDN | 1x-1A
-      - 🇹🇭 泰国NO1
-      - 🇨🇦 加拿大2
-      - 🇺🇸 美国-拉斯维加斯-003-1G
-      - 🇺🇸 美国-纽约-001-1F
-      - 🇸🇬 新加坡NO.2
-      - 🇰🇷 韩国-三网优化2-1B
-      - 🇰🇷 韩国-三网优化2-1N
-      - 🇺🇸 美国-布法罗-CDN | 1x-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1A
-      - 🇰🇷 韩国-三网优化2-1I
-      - 🇫🇷 法国2
-      - 🇰🇷 韩国-三网优化2-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-拉斯维加斯-003-1F
-      - 🇨🇦 加拿大1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国NO.1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
-      - 🇹🇼 台湾1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1H
-      - 🇭🇰 香港NO.1
-      - 🇰🇷 韩国 专线NO1
-      - 🇮🇳 印度1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇺🇸 美国-布法罗-CDN | 1x-1F
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇺🇸 美国-纽约-HY-001-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1E
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇰🇷 韩国-三网优化2-1H
-      - 🇺🇸 美国-纽约-001-1H
       - 🇺🇸 美国-布法罗-CDN | 1x-1D
-      - 🇺🇸 美国-纽约-001-1G
-      - 🇰🇷 韩国-三网优化2-1G
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
-      - 🇦🇺 澳大利亚原生2
-      - 🇬🇧 英国1
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
-      - 🇰🇷 韩国-三网优化2-1O
-      - 🇲🇾 马来西亚专线NO2
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇰🇷 韩国-三网优化2-1L
-      - 🇰🇷 韩国-三网优化2-1J
-      - 🇰🇷 韩国-三网优化2-1M
-      - 🇰🇷 韩国-三网优化2-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇰🇷 韩国-三网优化2-1P
-      - 🇺🇸 美国-拉斯维加斯-003-1H
-      - 🇬🇧 英国2
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-纽约-HY-001-1A
-      - 🇺🇸 美国-拉斯维加斯-002-1F
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-002-1D
-      - 🇭🇰 香港
-      - 🇺🇸 美国NO.2
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
-      - 🇹🇭 泰国NO2
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-布法罗-CDN | 1x-1C
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-拉斯维加斯-002-1G
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1C
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇰🇷 韩国-三网优化2-1E
-      - 🇺🇸 美国-布法罗-CDN | 1x-1B
-      - 🇺🇸 美国-拉斯维加斯-002-1B
-      - 🇺🇸 美国-纽约-HY-001-1F
-      - 🇰🇷 韩国-三网优化2-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1E
+      - 🇦🇺 澳大利亚原生1
+      - 🇹🇼 台湾1
       - 🇰🇷 韩国-三网优化2-1K
+      - 🇺🇸 美国NO.1
+      - 🇸🇬 新加坡NO.1
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇰🇷 韩国 专线NO1
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇭🇰 香港
+      - 🇺🇸 美国-布法罗-CDN | 1x-1H
+      - 🇺🇸 美国NO.2
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇲🇾 马来西亚专线NO1
+      - 🇲🇾 马来西亚专线NO2
       - 🇯🇵 日本NO.2
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1G
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇮🇳 印度1
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇹🇼 台湾2
+      - 🇮🇳 印度2
+      - 🇭🇰 香港NO.2
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇫🇷 法国1
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇺🇸 美国-布法罗-CDN | 1x-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇺🇸 美国-布法罗-CDN | 1x-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇬🇧 英国2
+      - 🇰🇷 韩国 专线NO2
+      - 🇨🇦 加拿大1
+      - 🇬🇧 英国1
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇫🇷 法国2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1C
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国-纽约-HY-001-1H
-      - 🇰🇷 韩国-三网优化2-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1C
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
-      - 🇺🇸 美国-布法罗-CDN | 1x-1A
-      - 🇹🇭 泰国NO1
-      - 🇨🇦 加拿大2
-      - 🇺🇸 美国-拉斯维加斯-003-1G
-      - 🇺🇸 美国-纽约-001-1F
-      - 🇸🇬 新加坡NO.2
-      - 🇰🇷 韩国-三网优化2-1B
-      - 🇰🇷 韩国-三网优化2-1N
-      - 🇺🇸 美国-布法罗-CDN | 1x-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1A
-      - 🇰🇷 韩国-三网优化2-1I
-      - 🇫🇷 法国2
-      - 🇰🇷 韩国-三网优化2-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-拉斯维加斯-003-1F
-      - 🇨🇦 加拿大1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国NO.1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
-      - 🇹🇼 台湾1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1H
-      - 🇭🇰 香港NO.1
-      - 🇰🇷 韩国 专线NO1
-      - 🇮🇳 印度1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇺🇸 美国-布法罗-CDN | 1x-1F
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇺🇸 美国-纽约-HY-001-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1E
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇰🇷 韩国-三网优化2-1H
-      - 🇺🇸 美国-纽约-001-1H
       - 🇺🇸 美国-布法罗-CDN | 1x-1D
-      - 🇺🇸 美国-纽约-001-1G
-      - 🇰🇷 韩国-三网优化2-1G
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
-      - 🇦🇺 澳大利亚原生2
-      - 🇬🇧 英国1
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
-      - 🇰🇷 韩国-三网优化2-1O
-      - 🇲🇾 马来西亚专线NO2
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇰🇷 韩国-三网优化2-1L
-      - 🇰🇷 韩国-三网优化2-1J
-      - 🇰🇷 韩国-三网优化2-1M
-      - 🇰🇷 韩国-三网优化2-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇰🇷 韩国-三网优化2-1P
-      - 🇺🇸 美国-拉斯维加斯-003-1H
-      - 🇬🇧 英国2
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-纽约-HY-001-1A
-      - 🇺🇸 美国-拉斯维加斯-002-1F
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-002-1D
-      - 🇭🇰 香港
-      - 🇺🇸 美国NO.2
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
-      - 🇹🇭 泰国NO2
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-布法罗-CDN | 1x-1C
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-拉斯维加斯-002-1G
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1C
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇰🇷 韩国-三网优化2-1E
-      - 🇺🇸 美国-布法罗-CDN | 1x-1B
-      - 🇺🇸 美国-拉斯维加斯-002-1B
-      - 🇺🇸 美国-纽约-HY-001-1F
-      - 🇰🇷 韩国-三网优化2-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1E
+      - 🇦🇺 澳大利亚原生1
+      - 🇹🇼 台湾1
       - 🇰🇷 韩国-三网优化2-1K
+      - 🇺🇸 美国NO.1
+      - 🇸🇬 新加坡NO.1
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇰🇷 韩国 专线NO1
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇭🇰 香港
+      - 🇺🇸 美国-布法罗-CDN | 1x-1H
+      - 🇺🇸 美国NO.2
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇲🇾 马来西亚专线NO1
+      - 🇲🇾 马来西亚专线NO2
       - 🇯🇵 日本NO.2
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1G
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇮🇳 印度1
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇹🇼 台湾2
+      - 🇮🇳 印度2
+      - 🇭🇰 香港NO.2
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇫🇷 法国1
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇺🇸 美国-布法罗-CDN | 1x-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇺🇸 美国-布法罗-CDN | 1x-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇬🇧 英国2
+      - 🇰🇷 韩国 专线NO2
+      - 🇨🇦 加拿大1
+      - 🇬🇧 英国1
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇫🇷 法国2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1C
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国-纽约-HY-001-1H
-      - 🇰🇷 韩国-三网优化2-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1C
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
-      - 🇺🇸 美国-布法罗-CDN | 1x-1A
-      - 🇹🇭 泰国NO1
-      - 🇨🇦 加拿大2
-      - 🇺🇸 美国-拉斯维加斯-003-1G
-      - 🇺🇸 美国-纽约-001-1F
-      - 🇸🇬 新加坡NO.2
-      - 🇰🇷 韩国-三网优化2-1B
-      - 🇰🇷 韩国-三网优化2-1N
-      - 🇺🇸 美国-布法罗-CDN | 1x-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1A
-      - 🇰🇷 韩国-三网优化2-1I
-      - 🇫🇷 法国2
-      - 🇰🇷 韩国-三网优化2-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-拉斯维加斯-003-1F
-      - 🇨🇦 加拿大1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国NO.1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
-      - 🇹🇼 台湾1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1H
-      - 🇭🇰 香港NO.1
-      - 🇰🇷 韩国 专线NO1
-      - 🇮🇳 印度1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇺🇸 美国-布法罗-CDN | 1x-1F
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇺🇸 美国-纽约-HY-001-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1E
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇰🇷 韩国-三网优化2-1H
-      - 🇺🇸 美国-纽约-001-1H
       - 🇺🇸 美国-布法罗-CDN | 1x-1D
-      - 🇺🇸 美国-纽约-001-1G
-      - 🇰🇷 韩国-三网优化2-1G
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
-      - 🇦🇺 澳大利亚原生2
-      - 🇬🇧 英国1
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
-      - 🇰🇷 韩国-三网优化2-1O
-      - 🇲🇾 马来西亚专线NO2
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇰🇷 韩国-三网优化2-1L
-      - 🇰🇷 韩国-三网优化2-1J
-      - 🇰🇷 韩国-三网优化2-1M
-      - 🇰🇷 韩国-三网优化2-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇰🇷 韩国-三网优化2-1P
-      - 🇺🇸 美国-拉斯维加斯-003-1H
-      - 🇬🇧 英国2
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-纽约-HY-001-1A
-      - 🇺🇸 美国-拉斯维加斯-002-1F
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-002-1D
-      - 🇭🇰 香港
-      - 🇺🇸 美国NO.2
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
-      - 🇹🇭 泰国NO2
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-布法罗-CDN | 1x-1C
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-拉斯维加斯-002-1G
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1C
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇰🇷 韩国-三网优化2-1E
-      - 🇺🇸 美国-布法罗-CDN | 1x-1B
-      - 🇺🇸 美国-拉斯维加斯-002-1B
-      - 🇺🇸 美国-纽约-HY-001-1F
-      - 🇰🇷 韩国-三网优化2-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1E
+      - 🇦🇺 澳大利亚原生1
+      - 🇹🇼 台湾1
       - 🇰🇷 韩国-三网优化2-1K
+      - 🇺🇸 美国NO.1
+      - 🇸🇬 新加坡NO.1
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇰🇷 韩国 专线NO1
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇭🇰 香港
+      - 🇺🇸 美国-布法罗-CDN | 1x-1H
+      - 🇺🇸 美国NO.2
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇲🇾 马来西亚专线NO1
+      - 🇲🇾 马来西亚专线NO2
       - 🇯🇵 日本NO.2
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1G
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇮🇳 印度1
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇹🇼 台湾2
+      - 🇮🇳 印度2
+      - 🇭🇰 香港NO.2
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇫🇷 法国1
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇺🇸 美国-布法罗-CDN | 1x-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇺🇸 美国-布法罗-CDN | 1x-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇬🇧 英国2
+      - 🇰🇷 韩国 专线NO2
+      - 🇨🇦 加拿大1
+      - 🇬🇧 英国1
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇫🇷 法国2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1C
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -857,103 +497,58 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国-纽约-HY-001-1H
-      - 🇰🇷 韩国-三网优化2-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1C
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
-      - 🇺🇸 美国-布法罗-CDN | 1x-1A
-      - 🇹🇭 泰国NO1
-      - 🇨🇦 加拿大2
-      - 🇺🇸 美国-拉斯维加斯-003-1G
-      - 🇺🇸 美国-纽约-001-1F
-      - 🇸🇬 新加坡NO.2
-      - 🇰🇷 韩国-三网优化2-1B
-      - 🇰🇷 韩国-三网优化2-1N
-      - 🇺🇸 美国-布法罗-CDN | 1x-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1A
-      - 🇰🇷 韩国-三网优化2-1I
-      - 🇫🇷 法国2
-      - 🇰🇷 韩国-三网优化2-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-拉斯维加斯-003-1F
-      - 🇨🇦 加拿大1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国NO.1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
-      - 🇹🇼 台湾1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
-      - 🇺🇸 美国-拉斯维加斯-002-1H
-      - 🇭🇰 香港NO.1
-      - 🇰🇷 韩国 专线NO1
-      - 🇮🇳 印度1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇺🇸 美国-布法罗-CDN | 1x-1F
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇺🇸 美国-纽约-HY-001-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1E
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇰🇷 韩国-三网优化2-1H
-      - 🇺🇸 美国-纽约-001-1H
       - 🇺🇸 美国-布法罗-CDN | 1x-1D
-      - 🇺🇸 美国-纽约-001-1G
-      - 🇰🇷 韩国-三网优化2-1G
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
-      - 🇦🇺 澳大利亚原生2
-      - 🇬🇧 英国1
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
-      - 🇰🇷 韩国-三网优化2-1O
-      - 🇲🇾 马来西亚专线NO2
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇰🇷 韩国-三网优化2-1L
-      - 🇰🇷 韩国-三网优化2-1J
-      - 🇰🇷 韩国-三网优化2-1M
-      - 🇰🇷 韩国-三网优化2-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇰🇷 韩国-三网优化2-1P
-      - 🇺🇸 美国-拉斯维加斯-003-1H
-      - 🇬🇧 英国2
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-纽约-HY-001-1A
-      - 🇺🇸 美国-拉斯维加斯-002-1F
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-002-1D
-      - 🇭🇰 香港
-      - 🇺🇸 美国NO.2
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
-      - 🇹🇭 泰国NO2
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-布法罗-CDN | 1x-1C
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-拉斯维加斯-002-1G
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
-      - 🇺🇸 美国-拉斯维加斯-002-1C
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇰🇷 韩国-三网优化2-1E
-      - 🇺🇸 美国-布法罗-CDN | 1x-1B
-      - 🇺🇸 美国-拉斯维加斯-002-1B
-      - 🇺🇸 美国-纽约-HY-001-1F
-      - 🇰🇷 韩国-三网优化2-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1E
+      - 🇦🇺 澳大利亚原生1
+      - 🇹🇼 台湾1
       - 🇰🇷 韩国-三网优化2-1K
+      - 🇺🇸 美国NO.1
+      - 🇸🇬 新加坡NO.1
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇰🇷 韩国 专线NO1
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇭🇰 香港
+      - 🇺🇸 美国-布法罗-CDN | 1x-1H
+      - 🇺🇸 美国NO.2
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇲🇾 马来西亚专线NO1
+      - 🇲🇾 马来西亚专线NO2
       - 🇯🇵 日本NO.2
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1G
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇮🇳 印度1
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇹🇼 台湾2
+      - 🇮🇳 印度2
+      - 🇭🇰 香港NO.2
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇫🇷 法国1
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇺🇸 美国-布法罗-CDN | 1x-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇺🇸 美国-布法罗-CDN | 1x-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇬🇧 英国2
+      - 🇰🇷 韩国 专线NO2
+      - 🇨🇦 加拿大1
+      - 🇬🇧 英国1
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇫🇷 法国2
+      - 🇺🇸 美国-布法罗-CDN | 1x-1F
+      - 🇺🇸 美国-布法罗-CDN | 1x-1C
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

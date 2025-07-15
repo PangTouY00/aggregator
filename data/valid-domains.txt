@@ -1,8 +1,6 @@
-https://dashuai.us
-https://ch.cukug.website
-https://loopycloud.ggff.net
 https://loopycloud.dpdns.org
-https://vt.louwangzhiyu.xyz
-https://ch.louwangzhiyu.xyz
-https://qingyun.zybs.eu.org
+https://loopycloud.ggff.net
 https://dl.vfkum.website
+https://ch.louwangzhiyu.xyz
+https://dashuai.us
+https://qingyun.zybs.eu.org

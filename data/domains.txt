@@ -1077,3 +1077,5 @@ https://svpn.cgtall.cn/
 https://lite.norton-cloud.com/
 https://cdn.blingcc.qzz.io/
 https://sahayun.xyz	@#@#	sahayun
+https://dash.hades.im/
+https://dashboard.hades.im/

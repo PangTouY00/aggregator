@@ -4436,3 +4436,5 @@ https://boards.pass-me.net/
 https://node.board.ccwu.cc/
 https://speed.kdns.fr/
 https://board.ccwu.cc/
+https://portal.colacloud.net/
+https://colacloud.online/
